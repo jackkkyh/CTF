@@ -1,0 +1,11 @@
+flag{l0calh0s7_n07_7h47_s3cur3_bit.ly/2nq9nyH}
+
+As no one can solve this question so let me explain the intended solution:
+1. Complete Meta Reader 1
+2. Read `admin.php` and found out there is no way to bypass IP check
+3. Target should be SSRF using XXE, it works for remote sites but does not work on 127.0.0.1:33004
+4. You know the server is nginx (by header)
+5. Read config file `/etc/nginx/nginx.conf` (or `/etc/nginx/sites-enabled/default`)
+6. Get the port number `8080`
+7. Request 127.0.0.1:8080/admin.php and do RCE
+8. You're here.

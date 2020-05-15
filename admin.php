@@ -1,0 +1,1 @@
+<h1>Admin panel only accessible from 127.0.0.1! Go away hackers</h1>
